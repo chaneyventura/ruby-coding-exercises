@@ -13,6 +13,12 @@ string_array = [
 ]
 
 def string_parser string_array
+    final_array = []
+    string_array.each do |string|
+      final_array << string.scan(/\d+/).last.to_i
+    end
+    final_array
+
 end
 
 describe "String Parser" do
