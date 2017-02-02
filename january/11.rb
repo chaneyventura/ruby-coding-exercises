@@ -2,8 +2,10 @@ require 'rspec'
 
 class Array
   def odd_selector
+    select(&:odd?)
   end
 end
+
 
 describe 'Odd selector' do
   it 'given an array, it returns a collection of the odd elements' do

@@ -6,7 +6,9 @@ menu = {
   'dessers': ['Cheesecake', 'Cake', 'Cupcake']
 }
 
-def daily_special hash
+def daily_special 
+  menu_items = []
+  hash.map { |category| menu_items << category.last }.flatten.sample
 end
 
 describe 'Nested hash element selector' do

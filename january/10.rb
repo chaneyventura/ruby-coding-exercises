@@ -1,6 +1,7 @@
 require 'rspec'
 
 def sum_generator num
+   0.upto(num).inject(&:+)
 end
 
 describe 'Dynamic sum' do
